@@ -1,0 +1,315 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.banner {
+  height: 90vh;
+  min-height: 600px;
+  background-image: url('https://i.ibb.co/HNvHSyV/image-header.jpg');
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar{
+  display: flex;
+  font-size: 20px;
+  color: white;
+  align-items: center;
+}
+
+.navbar span{
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.contact{
+  background-color: white;
+  color: black;
+  padding: 8px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2 ease-in-out;
+}
+
+.contact:hover{
+  background-color: aliceblue;
+}
+
+.center-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  flex-grow: 0.5;
+  color: white;
+  font-weight: bold;
+}
+
+.arrow{
+  margin-top: 100px;
+}
+
+.section1, .section2, .section3{
+  display: flex;
+  height: 400px;
+}
+
+.section1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section1 .left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1 .text-container{
+  width: 70%;
+}
+
+.left h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.left p {
+  color: #848391;
+  line-height: 1.8;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+}
+
+.section1 .left img{
+  width: 150px;
+  cursor: pointer;
+}
+
+.left, .right{
+  flex: 1;
+}
+
+
+
+.section2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section2 .right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2 .text-container{
+  width: 70%;
+}
+
+.right h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.right p {
+  color: #848391;
+  line-height: 1.8;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+}
+
+.left .button{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.section2 .right img{
+  width: 150px;
+  cursor: pointer;
+}
+
+
+.left, .right{
+  flex: 1;
+}
+
+.left img, .right img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.client-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffbf8;
+  padding: 50px
+}
+
+.testimonials h1{
+  color: #a0a1a2;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.clients{
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients .client{
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+  align-items: center;
+}
+
+.client .client-img{
+  margin-bottom: 25px;
+}
+
+.client p{
+  text-align: center;
+  margin-bottom: 25px;
+  color: #848391;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.client .details{
+  text-align: center;
+}
+
+.client h4{
+  color: #a0a1a2;
+  margin-top: 8px;
+}
+
+.examples{
+  display: flex;
+}
+
+.examples div{
+  flex: 0.25;
+}
+
+.examples img{
+  width: 100%;
+  height: 100%;
+}
+
+.footer{
+  background-color: #90D4C5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer .logo{
+  color: #2D7465;
+}
+
+.footer-nav{
+  color: #4f9485;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.footer-nav span{
+  padding: 20px;
+  cursor: pointer;
+}
+
+.footer-nav span:hover{
+  color: #2D7465;
+}
+
+.footer .social{
+  margin-top: 30px;
+}
+
+.social img{
+  padding: 10px;
+}
+
+@media (max-width: 767.98px){
+  .center-header{
+    text-align: center;
+  }
+  .section1 .section2 .section3{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .section1 h1{
+    font-size: 30px;
+  }
+
+  .section1 p{
+    line-height: 1.2;
+  }
+
+  .section2 h1{
+    font-size: 30px;
+  }
+
+  .section2 p{
+    line-height: 1.2;
+  }
+
+  .section .left{
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .examples{
+    flex-wrap: wrap;
+  }
+
+  .examples div{
+    flex: 0.5;
+    flex-basis: 50%
+  }
+
+  .clients{
+    flex-direction: column;
+  }
+
+  .clients .client{
+    margin-top: 20px;
+  }
+}
